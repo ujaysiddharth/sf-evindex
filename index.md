@@ -20,7 +20,7 @@ In addition, extreme heat can compound the effects of energy vulnerability for h
 
 The proposed research will incorporate multiple factors that influence energy vulnerability into one single index. A calculation through weighted analysis will create a single value for each census tract that demonstrates the tract's position on a scale of energy vulnerability. A final map will spatially visualize the data and demonstrate the distribution of energy vulnerability across the region(s) of study.
 
-<img src="images/sfenergy.jpg" alt="hi" class="inline"/>
+<img src="images/sfenergy.jpg" alt="hi" class="inline" width="48"/>
 
 ### Markdown
 
