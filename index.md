@@ -22,13 +22,16 @@ The proposed research will incorporate multiple factors that influence energy vu
 
 <img src="images/sfenergy.png" alt="hi" class="inline">
 
-<img src="images/sf_bldandpp_age.jpg" alt="hi" class="inline">
-
 <img src="images/sfenergyconsumption-cdd.jpg" alt="hi" class="inline">
+
+<img src="images/sfurbantreecanopy.jpg" alt="hi" class="inline">
 
 <img src="images/sfhealthdatamap.jpg" alt="hi" class="inline">
 
 <img src="images/sfmedincome.jpg" alt="hi" class="inline">
+
+<img src="images/sf_bldandpp_age.jpg" alt="hi" class="inline">
+
 
 ### Markdown
 
