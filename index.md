@@ -22,6 +22,14 @@ The proposed research will incorporate multiple factors that influence energy vu
 
 <img src="images/sfenergy.jpg" alt="hi" class="inline" width=750 height=500>
 
+<img src="images/sf_bldandpp_age.jpg" alt="hi" class="inline">
+
+<img src="images/sfenergyconsumption-cdd.jpg" alt="hi" class="inline">
+
+<img src="images/sfhealthdatamap.jpg" alt="hi" class="inline">
+
+<img src="images/sfmedincome.jpg" alt="hi" class="inline">
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
