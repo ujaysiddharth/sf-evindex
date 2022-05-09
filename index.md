@@ -1,8 +1,26 @@
-## Welcome to GitHub Pages
+### Building an Energy Vulnerability Index for San Francisco
 
-You can use the [editor on GitHub](https://github.com/ujaysiddharth/sf-evindex/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+For my research proposal, I intend to develop an energy vulnerability index for San Francisco, and potentially other Bay Area cities such as Berkeley and/or Oakland, to evaluate the distribution of energy grid resilience and vulnerability across the city. Index construction will require multiple datasets as well as spatial and statistical manipulation of datasets in order to truly establish an effective metric by which to measure energy vulnerability.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Potential factors to include in the index are:
+
+Energy consumption data (Source: Bay Area Regional Energy Network Energy Atlas)
+Temperature and heat data (Source: USGS Landsat Raster Data for Air Surface Temperature)
+Presence of tree canopy (Source: SF Urban Tree Canopy Vector Data)
+Building age (Source: SF Land Use Parcel Data)
+Proximity to healthcare facilities (SF Healthcare Facilities Point Data)
+Median income - past 12 months (Source: 2019 ACS Data 5-Year Estimates)
+Age (Source: 2019 ACS Data 5-Year Estimates)
+Health Insurance (Source: 2019 ACS Data 5-Year Estimates)
+As shown, each factor includes a data source. I will continue to workshop the dataset factors that construct the index in order to develop a well-balanced tool to assess energy vulnerability.
+
+An energy vulnerability index will produce a spatial representation of community vulnerability to high energy prices and energy grid shutoffs and disconnections. It is well known that low-income families face a disproportionately higher energy burden – a denomination defined by the percentage of a household’s gross income spent on energy costs. According to the Department of Energy's Low-Income Energy Affordability Data Tool, the national average energy burden for low-income households is 8.6%, approximately three times higher than for non-low-income households. In some areas, depending on location and income, the energy burden can be as high as 30% of household gross income. Households with high energy burdens have also been found to be at greater risk for respiratory diseases, suffer from increased stress and economic hardship, and find it harder to escape poverty.
+
+In addition, extreme heat can compound the effects of energy vulnerability for households. Heat waves and their impacts are well known to be distributed unevenly across several U.S. cities, including San Francisco. An analysis by the San Francisco Department of Public Health found that overburdened neighborhoods likely face the greatest challenges from heat waves, excess stress on the grid, and increased health vulnerabilities. Additionally, as the frequency of “extreme heat” days increases, those with high rates of power disconnection will face significant risk if they are unable to afford the costs of cooling. High demand for cooling to prevent health disasters from high heat exposure will further exacerbate energy cost burdens, an impact largely experienced by low-income communities.
+
+The proposed research will incorporate multiple factors that influence energy vulnerability into one single index. A calculation through weighted analysis will create a single value for each census tract that demonstrates the tract's position on a scale of energy vulnerability. A final map will spatially visualize the data and demonstrate the distribution of energy vulnerability across the region(s) of study.
+
+<img src="images/sfenergy.jpg" alt="hi" class="inline"/>
 
 ### Markdown
 
@@ -26,12 +44,3 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ujaysiddharth/sf-evindex/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
