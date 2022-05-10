@@ -1,4 +1,4 @@
-### **Building an Energy Vulnerability Index for San Francisco**
+# **Building an Energy Vulnerability Index for San Francisco**
 
 May 9th, 2022
 
