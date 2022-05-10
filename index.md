@@ -4,7 +4,7 @@ May 9th, 2022
 
 For this project I constructed an Energy Vulnerability Index (EVI) for San Francisco to evaluate the vulnerability of neighborhoods to the impacts of high electricity utility bills, power disconnections and energy grid shutoffs. An energy vulnerability index will produce a spatial representation of community vulnerability to energy systems, a particularly important consideration in the context of a rapidly changing climate. With the transition to an electric grid powered by renewable energy, the price of the energy commodity is projected to decrease. One purpose of a complete EVI is to help identify which communities will benefit the most from the implementation of a 100% renewable energy electricity grid and a more affordable energy commodity. 
 
-## METHODOLOGY
+## Methodology
 
 The EVI was built using eight different variables to determine an area’s energy vulnerability. The variables were selected by their role in 1) exposure to risk 2) sensitivity and 3) adaptive capacity. In climate vulnerability analysis, broadly defined, exposure to risk, sensitivity, and adaptive capacity are defined using the following:
 
@@ -35,7 +35,7 @@ To combine the resulting values into the final EVI, a formula was used to add al
 (Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8) / n
 </p>
   
-## VARIABLES – MAPS AND BACKGROUND
+## Variables - Maps & Background
 
 <img src="images/sfenergyconsumption-income.jpg" alt="hi" class="inline">
 
@@ -57,12 +57,12 @@ Power outages and grid shutoffs also create an uneven distribution of impacts fo
 
 Older adults face high risk to climate hazards such as heat, cold, earthquake, and wildfires because they are more likely to have chronic physical or cognitive health conditions. For example, with heat, older populations face higher risk to dehydration, heat stroke, and other heat-related illnesses. Older adults are also more vulnerable to power disruptions because they are more likely to rely on electrical equipment for everyday medical support. 
 
-## FINAL THOUGHTS
+## Final Thoughts
 
 The final Energy Vulnerability Index provides key information to understand the distribution of communities vulnerable to high energy burdens, power disconnections, and power disruptions across the city of San Francisco. We need to ensure we take full advantage of the transition to renewable energy and utilize new technological opportunities to relieve stresses and shocks to the system that have historically harmed disadvantaged communities. A tool like the San Francisco EVI can guide the city to implement interventions such as solar and wind-sourced electricity, battery storage facilities, and micro-grids, through identifying locations for projects where marginalized communities will benefit the most. 
 
 
-## CITATIONS
+## Citations
 
 1. Cal-Adapt. (2021). Cooling Degree Days and Heating Degree Days. Cal-Adapt. https://cal-adapt.org/tools/degree-days
 2. Department for International Development. (2011). Defining Disaster Resilience: A DFID Approach Paper. UK Aid: Department for International Development.
