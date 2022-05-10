@@ -59,7 +59,7 @@ Older adults face high risk to climate hazards such as heat, cold, earthquake, a
 
 ## FINAL THOUGHTS
 
-An Energy Vulnerability Index gives us the information we need to understand the distribution of communities vulnerable to high energy burdens, power disconnections, and power disruptions as a result of natural climate hazards. The transition to a renewable-energy powered electricity grid is an opportunity to utilize new technologies to support historically disadvantaged communities. With a tool like this, San Francisco can identify the communities that need the most support and will benefit the most from interventions such as solar and wind-sourced electricity, battery storage facilities, micro-grids, and the numerous other technologies that are transforming our local energy systems today.
+The final Energy Vulnerability Index provides key information to understand the distribution of communities vulnerable to high energy burdens, power disconnections, and power disruptions across the city of San Francisco. We need to ensure we take full advantage of the transition to renewable energy and utilize new technological opportunities to relieve stresses and shocks to the system that have historically harmed disadvantaged communities. A tool like the San Francisco EVI can guide the city to implement interventions such as solar and wind-sourced electricity, battery storage facilities, and micro-grids, through identifying locations for projects where marginalized communities will benefit the most. 
 
 
 ## CITATIONS
