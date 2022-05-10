@@ -2,7 +2,7 @@
 
 May 9th, 2022
 
-For this project I constructed an Energy Vulnerability Index (EVI) for San Francisco to evaluate the vulnerability of neighborhoods to the impacts of high electricity utility bills, power disconnections and energy grid shutoffs. The final map spatially illustrates community vulnerability to energy systems, a particularly important consideration in the context of a rapidly changing climate. With the transition to an electric grid powered by renewable energy, the price of the energy commodity is projected to decrease. One purpose of a complete EVI is to help identify which communities will benefit the most from the implementation of a 100% renewable energy electricity grid and a more affordable energy commodity. 
+For this project I constructed an Energy Vulnerability Index (EVI) for San Francisco to evaluate the vulnerability of neighborhoods to the impacts of high electricity utility bills, power disconnections and energy grid shutoffs. The final map spatially illustrates community vulnerability to energy systems, a particularly important consideration in the context of a rapidly changing climate. With the transition to an electric grid powered by renewable energy, the price of the energy commodity is projected to decrease. The key purpose of a complete EVI for San Francisco is to help identify which communities will benefit the most from the implementation of a 100% renewable energy electricity grid and a more affordable energy commodity. 
 
 <img src="images/sfenergy.jpg" alt="hi" class="inline">
 
