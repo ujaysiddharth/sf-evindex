@@ -16,7 +16,7 @@ The EVI was built using eight different variables to determine an area’s energ
 
 After reviewing existing vulnerability literature and evaluating existing datasets, I used exposure to risk, sensitivity, and adaptive capacity to select eight variables to assess overall energy vulnerability. Each variable required one dataset. Eight datasets for the eight different variables were identified to calculate the final EVI. All eight datasets for variables included in the index required geospatial and statistical manipulation, the processes for which are further outlined in the table below. Further research could interrogate all available variables and datasets with more rigor to build the best possible index for energy vulnerability in San Francisco. 
 
-The eight variables, accompanying datasets, and geospatial and statistical analysis are described with more detail in the table below: 
+The eight variables, accompanying datasets, and geospatial and statistical analysis are described in the table below: 
 
 <img src="images/evi_variables_table.jpg" alt="hi" class="inline">
 
