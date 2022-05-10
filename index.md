@@ -1,36 +1,61 @@
 ### Building an Energy Vulnerability Index for San Francisco
 
-For my research proposal, I intend to develop an energy vulnerability index for San Francisco, and potentially other Bay Area cities such as Berkeley and/or Oakland, to evaluate the distribution of energy grid resilience and vulnerability across the city. Index construction will require multiple datasets as well as spatial and statistical manipulation of datasets in order to truly establish an effective metric by which to measure energy vulnerability.
+For this project I constructed an Energy Vulnerability Index (EVI) for San Francisco to evaluate the vulnerability of neighborhoods to the impacts of high electricity utility bills, power disconnections and energy grid shutoffs. An energy vulnerability index will produce a spatial representation of community vulnerability to energy systems, a particularly important consideration in the context of a rapidly changing climate. With the transition to an electric grid powered by renewable energy, the price of the energy commodity is projected to decrease. One purpose of a complete EVI is to help identify which communities will benefit the most from the implementation of a 100% renewable energy electricity grid and a more affordable energy commodity. 
 
-Potential factors to include in the index are:
+## METHODOLOGY
 
-Energy consumption data (Source: Bay Area Regional Energy Network Energy Atlas)
-Temperature and heat data (Source: USGS Landsat Raster Data for Air Surface Temperature)
-Presence of tree canopy (Source: SF Urban Tree Canopy Vector Data)
-Building age (Source: SF Land Use Parcel Data)
-Proximity to healthcare facilities (SF Healthcare Facilities Point Data)
-Median income - past 12 months (Source: 2019 ACS Data 5-Year Estimates)
-Age (Source: 2019 ACS Data 5-Year Estimates)
-Health Insurance (Source: 2019 ACS Data 5-Year Estimates)
-As shown, each factor includes a data source. I will continue to workshop the dataset factors that construct the index in order to develop a well-balanced tool to assess energy vulnerability.
+The EVI was built using eight different variables to determine an area’s energy vulnerability. The variables were selected by their role in 1) exposure to risk 2) sensitivity and 3) adaptive capacity. In climate vulnerability analysis, broadly defined, exposure to risk, sensitivity, and adaptive capacity are defined using the following:
 
-An energy vulnerability index will produce a spatial representation of community vulnerability to high energy prices and energy grid shutoffs and disconnections. It is well known that low-income families face a disproportionately higher energy burden – a denomination defined by the percentage of a household’s gross income spent on energy costs. According to the Department of Energy's Low-Income Energy Affordability Data Tool, the national average energy burden for low-income households is 8.6%, approximately three times higher than for non-low-income households. In some areas, depending on location and income, the energy burden can be as high as 30% of household gross income. Households with high energy burdens have also been found to be at greater risk for respiratory diseases, suffer from increased stress and economic hardship, and find it harder to escape poverty.
+-	Exposure to risk: The degree to which a community is exposed to climatic variations.
+-	Sensitivity: The degree to which a community is affected by climate variations.
+-	Adaptive Capacity: The ability of a community to adjust and moderate damage.
 
-In addition, extreme heat can compound the effects of energy vulnerability for households. Heat waves and their impacts are well known to be distributed unevenly across several U.S. cities, including San Francisco. An analysis by the San Francisco Department of Public Health found that overburdened neighborhoods likely face the greatest challenges from heat waves, excess stress on the grid, and increased health vulnerabilities. Additionally, as the frequency of “extreme heat” days increases, those with high rates of power disconnection will face significant risk if they are unable to afford the costs of cooling. High demand for cooling to prevent health disasters from high heat exposure will further exacerbate energy cost burdens, an impact largely experienced by low-income communities.
+After reviewing existing vulnerability literature and evaluating existing datasets, I used exposure to risk, sensitivity, and adaptive capacity to select eight variables to assess overall energy vulnerability. Each variable required one dataset. Eight datasets for the eight different variables were identified to calculate the final EVI. All eight datasets for variables included in the index required geospatial and statistical manipulation, the processes for which are further outlined in the table below. Further research could interrogate all available variables and datasets with more rigor to build the best possible index for energy vulnerability in San Francisco. 
 
-The proposed research will incorporate multiple factors that influence energy vulnerability into one single index. A calculation through weighted analysis will create a single value for each census tract that demonstrates the tract's position on a scale of energy vulnerability. A final map will spatially visualize the data and demonstrate the distribution of energy vulnerability across the region(s) of study.
+The eight variables, accompanying datasets, and geospatial and statistical analysis are described in the table below: 
 
-<img src="images/sfenergy.jpg" alt="hi" class="inline">
+<img src="images/evi_variables_table.jpg" alt="hi" class="inline">
 
-<img src="images/sfenergyconsumption-cdd.jpg" alt="hi" class="inline">
+All data was normalized spatially at the census tract level in order to establish a single unit of spatial analysis. 
 
-<img src="images/sfurbantreecanopy.jpg" alt="hi" class="inline">
+The data for each variable was also normalized between a scale of 0-1 to ensure equal weighting for each variable in the index. The formula to normalize the data for each dataset is as follows:
+
+<p align="center">
+When high values represent greater vulnerability: y = (x-min)/(max-min)
+When low values represent greater vulnerability: y = (max-x)/(max-min)
+</p>
+
+To combine the resulting values into the final EVI, a formula was used to add all individual normalized variables together and divide by the total number of variables. The formula is as follows:
+
+<p align="center">
+(Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8) / n
+</p>
+  
+## VARIABLES – MAPS AND BACKGROUND
+
+<img src="images/sfenergyconsumption-income.jpg" alt="hi" class="inline">
+
+It is well known that low-income families face high electric utility costs, for example disproportionately high energy burdens. Energy burden is defined by the percentage of a household’s gross income spent on energy costs. According to the Department of Energy’s Low-Income Energy Affordability Data Tool, the national average energy burden for low-income households is 8.6%, approximately three times higher than for non-low-income households. In some areas, depending on location and income, the energy burden can be as high as 30% of household gross income. Households with high energy burdens have also been found to be at greater risk for respiratory diseases, suffer from increased stress and economic hardship, and find it harder to escape poverty.
+
+<img src="images/sf-utc-cdd.jpg" alt="hi" class="inline">
+
+Extreme heat can compound the effects of energy vulnerability for households. Heat waves and their impacts are well known to be distributed unevenly across several U.S. cities, including San Francisco. An analysis by the San Francisco Department of Public Health found that overburdened neighborhoods likely face the greatest challenges from heat waves, excess stress on the grid, and increased health vulnerabilities. Additionally, as the frequency of Cooling Degree Days increases, those with high rates of power disconnection will face significant risk if they are unable to afford the costs of cooling. A Cooling Degree Day (CDD) is the number of degrees by which a daily average temperature exceeds a base temperature and may therefore require additional energy for space cooling. Increasingly high demand for cooling to prevent health disasters from high heat exposure will further exacerbate energy cost burdens, an impact largely experienced by low-income communities.
+
+<img src="images/sf_bldage.jpg" alt="hi" class="inline">
+
+Energy codes and standards set minimum efficiency requirements for new and renovated buildings, assuring lower utility bills and optimized energy use for heating and cooling. A building's operation and environmental impact is largely determined by upfront decisions during new construction and renovation. Determining a building’s age can provide insight into the recency of its construction. If a building was constructed many years ago, it is far less likely to have incorporated the energy efficiency building practices required by today’s building codes. This means less efficient building heating and cooling and an overall higher energy burden through more expensive utility bills for local residents. 
 
 <img src="images/sfhealthdatamap.jpg" alt="hi" class="inline">
 
-<img src="images/sfmedincome.jpg" alt="hi" class="inline">
+Power outages and grid shutoffs also create an uneven distribution of impacts for populations with underlying health conditions. Understanding the distribution of healthcare facilities and populations without health insurance can help ensure that vulnerable populations reliant on electrical equipment for their mobility, managing medical needs (oxygen, dialysis, asthma nebulizers, refrigeration of medication, etc), and more are not left without critical medical support.
 
-<img src="images/sf_bldandpp_age.jpg" alt="hi" class="inline">
+<img src="images/sf_oldage.jpg" alt="hi" class="inline">
+
+Older adults face high risk to climate hazards such as heat, cold, earthquake, and wildfires because they are more likely to have chronic physical or cognitive health conditions. For example, with heat, older populations face higher risk to dehydration, heat stroke, and other heat-related illnesses. Older adults are also more vulnerable to power disruptions because they are more likely to rely on electrical equipment for everyday medical support. 
+
+## FINAL THOUGHTS
+
+An Energy Vulnerability Index gives us the information we need to understand the distribution of communities vulnerable to high energy burdens, power disconnections, and power disruptions as a result of natural climate hazards. The transition to a renewable-energy powered electricity grid is an opportunity to utilize new technologies to support historically disadvantaged communities. With a tool like this, San Francisco can identify the communities that need the most support and will benefit the most from interventions such as solar and wind-sourced electricity, battery storage facilities, micro-grids, and the numerous other technologies that are transforming our local energy systems today.
 
 
 ### Markdown
