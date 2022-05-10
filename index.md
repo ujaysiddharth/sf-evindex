@@ -21,14 +21,16 @@ All data was normalized spatially at the census tract level in order to establis
 The data for each variable was also normalized between a scale of 0-1 to ensure equal weighting for each variable in the index. The formula to normalize the data for each dataset is as follows:
 
 <p align="center">
-When high values represent greater vulnerability: y = (x-min)/(max-min)
-When low values represent greater vulnerability: y = (max-x)/(max-min)
+**When high values represent greater vulnerability: y = (x-min)/(max-min)**
+</p>
+<p align="center">
+**When low values represent greater vulnerability: y = (max-x)/(max-min)**
 </p>
 
 To combine the resulting values into the final EVI, a formula was used to add all individual normalized variables together and divide by the total number of variables. The formula is as follows:
 
 <p align="center">
-(Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8) / n
+**(Variable1 + Variable2 + Variable3 + Variable4 + Variable5 + Variable6 + Variable7 + Variable8) / n**
 </p>
   
 ## VARIABLES – MAPS AND BACKGROUND
